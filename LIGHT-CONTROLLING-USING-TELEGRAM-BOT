@@ -38,7 +38,7 @@ def off(bot,update):
     value = Data(value=0)
     value_send = aio.create_data('light',value)
     
-u = Updater('1125182920:AAFnkMbF1LZbeIX5MdMBdNLFv0VOPBJLyxc')  #change the token
+u = Updater('1125182920:AAFnkMbF1LZbeIX5MdMBdNLFv0VOPBJLyxc')  
 dp = u.dispatcher
 dp.add_handler(CommandHandler('on',on))
 dp.add_handler(CommandHandler('off',off))
